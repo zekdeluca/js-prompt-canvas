@@ -10,5 +10,5 @@ const inputs = {
 };
 
 const main = new MyMainClass([ new MyClass(...inputs["Item"]) ]);
-const items = main.performMainAction();
-
+main.performMainAction();
+main.inputAction();

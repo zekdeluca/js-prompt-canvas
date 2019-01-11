@@ -12,10 +12,10 @@ const test_scenario_inputs = {
 
 describe("This is my test suite", function() {
   it("Should have set all attributes to zero", function() {
-    const main = new MyMainClass([ new MyClass(...test_scenario_inputs["Basic item"]) ]);
-    const items = main.performMainAction();
-    expect(items[0].attributeOne).to.equal(0);
-    expect(items[0].attributeTwo).to.equal(0);
-    expect(items[0].attributeThree).to.equal(0);
+    const myClass = new MyClass(...test_scenario_inputs["Basic item"]);
+    const attributes = myClass.setToZero();
+    expect(attributes.attributeOne).to.equal(0);
+    expect(attributes.attributeTwo).to.equal(0);
+    expect(attributes.attributeThree).to.equal(0);
   });
 });
